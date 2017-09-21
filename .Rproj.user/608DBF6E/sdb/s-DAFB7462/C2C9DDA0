@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "#libraries\nlibrary(tidyverse) #varios paquetes compatibles en la represntacion de datos\nlibrary(igraph) #network analysis tools for R, python and C/C++\nlibrary(statnet) # tools for analysis, simulation and visulization of networks\n\n#loaing the edges and nodes' network\nload(\"union_edges.RData\")\nload(\"union_characters.RData\")\n\n#showing the RData tables\n#head(union_edges)\n#head(union_characters)\n\n#creating the network from ipgraph\nunion_graph <- graph_from_data_frame(union_edges, directed = TRUE, vertices = union_characters)\n\n#plot\nlayout <- layout_with_fr(union_graph)\nplot(union_graph, layout = layout)\n\n\n",
+    "created" : 1505986464070.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3295099311",
+    "id" : "C2C9DDA0",
+    "lastKnownWriteTime" : 1505989509,
+    "last_content_update" : 1505989509,
+    "path" : "~/R_projects/GameOfThrones/GameOfThrones.R",
+    "project_path" : "GameOfThrones.R",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

@@ -1,7 +1,7 @@
 #libraries
 library(tidyverse) #varios paquetes compatibles en la represntacion de datos
 library(igraph) #network analysis tools for R, python and C/C++
-library(statnet) # tools for analysis, simulation and visulization of network
+library(statnet) # tools for analysis, simulation and visulization of networks
 
 #loaing the edges and nodes' network
 load("union_edges.RData")
